@@ -2,7 +2,9 @@ import '../styles/global.css';
 
 import '../translation';
 
-import { Stack } from 'expo-router';
+import 'react-native-url-polyfill/auto';
+import { Slot, SplashScreen, Stack } from 'expo-router';
+import { useFonts } from 'expo-font';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export const unstable_settings = {
@@ -10,13 +12,18 @@ export const unstable_settings = {
   initialRouteName: '(drawer)',
 };
 
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout() {
+  const [fontsLoaded, error] = useFonts({});
+
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Stack>
+      {/*  <Stack>
         <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
         <Stack.Screen name="modal" options={{ title: 'Modal', presentation: 'modal' }} />
-      </Stack>
+      </Stack> */}
+      <Slot />
     </GestureHandlerRootView>
   );
 }
