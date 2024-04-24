@@ -1,4 +1,4 @@
-import { InternalizationExample } from 'components/InternalizationExample';
+import { InternalizationExample } from '@/components/InternalizationExample';
 import { StatusBar } from 'expo-status-bar';
 import { Platform } from 'react-native';
 
