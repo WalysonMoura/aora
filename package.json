@@ -8,7 +8,8 @@
     "format": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix && prettier \"**/*.{js,jsx,ts,tsx,json}\" --write",
     "ios": "expo start --ios",
     "start": "expo start",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "dev": "expo start --tunnel"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
