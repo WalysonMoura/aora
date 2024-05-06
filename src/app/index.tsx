@@ -12,16 +12,17 @@ const Welcome = () => {
       <ScrollView
         contentContainerStyle={{
           height: '100%',
+          backgroundColor: '#161622',
         }}>
-        <View className="flex h-full w-full items-center justify-center px-4">
+        <View className="flex h-full w-full items-center justify-center  px-4">
           <Image source={images.logo} className="h-[84px] w-[130px]" resizeMode="contain" />
           <Image
             source={images.cards}
             className="h-[298px] w-full max-w-[380px]"
             resizeMode="contain"
           />
-          <View>
-            <Text>
+          <View className="relative mt-5">
+            <Text className="text-center text-3xl font-bold text-white">
               Descubra o infinito{'\n'}
               Possibilidades com{' '}
             </Text>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { FlatList, RefreshControl, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-const posts = [
+/* const posts = [
   {
     $id: '1',
     title: 'Learn React Native in 10 Minutes',
@@ -37,9 +37,9 @@ const posts = [
     },
   },
 ];
-
+ */
 const Home = () => {
-  const { data: poss, loading, refetch } = useAppwrite();
+/*   const { data: poss, loading, refetch } = useAppwrite();
 
   const [refreshing, setRefreshing] = useState(false);
 
@@ -47,11 +47,11 @@ const Home = () => {
     setRefreshing(true);
     await refetch;
     setRefreshing(false);
-  };
+  }; */
 
   return (
     <SafeAreaView className="bg-primary">
-      <FlatList
+      {/* <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => (
@@ -68,7 +68,7 @@ const Home = () => {
           <EmptyState title="No Videos Found" subtitle="No videos created yet" />
         )}
         refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />}
-      />
+      /> */}
 
       <Text>fff</Text>
     </SafeAreaView>
